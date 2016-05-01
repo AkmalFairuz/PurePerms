@@ -113,19 +113,19 @@ class PurePerms extends PluginBase
         $commandMap = $this->getServer()->getCommandMap();
 
         $commandMap->register("addgroup", new AddGroup($this, "addgroup", $this->getMessage("cmds.addgroup.desc")));
-        $commandMap->register("defgroup", new DefGroup($this, "xodefgroup", $this->getMessage("cmds.defgroup.desc")));
+        $commandMap->register("defgroup", new DefGroup($this, "defgroup", $this->getMessage("cmds.defgroup.desc")));
         $commandMap->register("fperms", new FPerms($this, "fperms", $this->getMessage("cmds.fperms.desc")));
         $commandMap->register("groups", new Groups($this, "groups", $this->getMessage("cmds.groups.desc")));
         $commandMap->register("listgperms", new ListGPerms($this, "listgperms", $this->getMessage("cmds.listgperms.desc")));
         $commandMap->register("listuperms", new ListUPerms($this, "listuperms", $this->getMessage("cmds.listuperms.desc")));
         $commandMap->register("ppinfo", new PPInfo($this, "ppinfo", $this->getMessage("cmds.ppinfo.desc")));
         $commandMap->register("ppreload", new PPReload($this, "ppreload", $this->getMessage("cmds.ppreload.desc")));
-        $commandMap->register("rmgroup", new RmGroup($this, "soermgroup", $this->getMessage("cmds.rmgroup.desc")));
-        $commandMap->register("setgperm", new SetGPerm($this, "soesetgperm", $this->getMessage("cmds.setgperm.desc")));
-        $commandMap->register("setgroup", new SetGroup($this, "soesetgroup", $this->getMessage("cmds.setgroup.desc")));
-        $commandMap->register("setuperm", new SetUPerm($this, "soesetuperm", $this->getMessage("cmds.setuperm.desc")));
-        $commandMap->register("unsetgperm", new UnsetGPerm($this, "soeunsetgperm", $this->getMessage("cmds.unsetgperm.desc")));
-        $commandMap->register("unsetuperm", new UnsetUPerm($this, "soeunsetuperm", $this->getMessage("cmds.unsetuperm.desc")));
+        $commandMap->register("rmgroup", new RmGroup($this, "rmgroup", $this->getMessage("cmds.rmgroup.desc")));
+        $commandMap->register("setgperm", new SetGPerm($this, "setgperm", $this->getMessage("cmds.setgperm.desc")));
+        $commandMap->register("setgroup", new SetGroup($this, "setgroup", $this->getMessage("cmds.setgroup.desc")));
+        $commandMap->register("setuperm", new SetUPerm($this, "setuperm", $this->getMessage("cmds.setuperm.desc")));
+        $commandMap->register("unsetgperm", new UnsetGPerm($this, "unsetgperm", $this->getMessage("cmds.unsetgperm.desc")));
+        $commandMap->register("unsetuperm", new UnsetUPerm($this, "unsetuperm", $this->getMessage("cmds.unsetuperm.desc")));
         $commandMap->register("usrinfo", new UsrInfo($this, "usrinfo", $this->getMessage("cmds.usrinfo.desc")));
     }
 
